@@ -58,7 +58,7 @@ La información del currículum se guarda en el almacenamiento local (`localStor
 
 ## Link
 
-`https://nicomaximiliano.github.io/generador-cv-ats`
+[Entrar a la pagina](https://nicomaximiliano.github.io/generador-cv-ats)
 
 ## Autor
 
