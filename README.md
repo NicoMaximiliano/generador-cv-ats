@@ -38,26 +38,6 @@ No requiere instalación de dependencias, compilación ni servidor backend.
 └── README.md
 ```
 
-## Uso local
-
-1. Descarga o clona este repositorio.
-2. Abre `index.html` en un navegador moderno.
-3. Completa los datos y agrega las entradas de experiencia, educación, habilidades y certificaciones.
-4. Selecciona **Generar currículum** para abrir la vista final.
-5. Usa **Imprimir / Guardar como PDF** y elige la opción correspondiente en el diálogo del navegador.
-
-También puedes servir la carpeta con cualquier servidor estático local. No hay comandos de instalación o compilación.
-
-## Publicar en GitHub Pages
-
-1. Sube los archivos del proyecto a un repositorio de GitHub.
-2. En el repositorio, abre **Settings → Pages**.
-3. En **Build and deployment**, selecciona **Deploy from a branch**.
-4. Elige la rama que contiene el proyecto y la carpeta raíz (`/`), y guarda los cambios.
-5. Cuando GitHub Pages termine la publicación, abre la URL que muestra la sección **Pages**.
-
-El archivo de entrada es `index.html`, por lo que el sitio puede publicarse como página estática sin configuración adicional.
-
 ## Almacenamiento y privacidad
 
 La información del currículum se guarda en el almacenamiento local (`localStorage`) del navegador, bajo la clave `curriculum`. No se envía a un servidor. Los datos están disponibles desde el mismo navegador y origen donde se generaron; al usar otro navegador o dispositivo, no se transfieren automáticamente. Para borrar los datos guardados, elimina la clave `curriculum` desde las herramientas de almacenamiento del navegador.
