@@ -1,142 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>CV Online</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crea un currículum profesional y legible por sistemas ATS.">
+  <title>Crear currículum | CV Online</title>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-
-    <header class="py-3 mb-4 text-center text-small">
-        <div class="container">
-            <h1>Curriculum Vitae Online</h1>
-            <p class="mb-1">Sitio web creado para realizar un curriculum vitae</p>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">CV ONLINE</p>
+      <h1>Tu próximo paso profesional</h1>
+      <p>Completa tus datos y crea un currículum claro, profesional y fácil de leer por sistemas ATS.</p>
+    </div>
+  </header>
+  <main class="form container">
+    <form class="form-curriculum">
+      <section>
+        <h2>Datos de contacto</h2>
+        <div class="fields">
+          <div class="mb-3"><label class="form-label" for="nombre">Nombre</label><input class="form-control" id="nombre" name="nombre" autocomplete="given-name" required></div>
+          <div class="mb-3"><label class="form-label" for="apellido">Apellido</label><input class="form-control" id="apellido" name="apellido" autocomplete="family-name" required></div>
+          <div class="mb-3"><label class="form-label" for="email">Correo electrónico</label><input class="form-control" type="email" id="email" name="email" autocomplete="email"></div>
+          <div class="mb-3"><label class="form-label" for="telefono">Teléfono</label><input class="form-control" type="tel" id="telefono" name="telefono" autocomplete="tel"></div>
+          <div class="mb-3"><label class="form-label" for="ubicacion">Ubicación</label><input class="form-control" id="ubicacion" name="ubicacion" placeholder="Ciudad, provincia / país" autocomplete="address-level2"></div>
+          <div class="mb-3"><label class="form-label" for="linkedin">LinkedIn o portfolio</label><input class="form-control" type="url" id="linkedin" name="linkedin" placeholder="https://..."></div>
         </div>
-    </header>
-
-    <main class="form">
-        <form class="form-curriculum container">
-
-                <h2>Informacion Personal</h2>
-                <div class="mb-3">
-                    <label class="form-label" for="nombre">Nombre</label>
-                    <input class="form-control" type="text" placeholder="Ingrese el nombre" name="nombre" id="nombre">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="apellido">Apellido</label>
-                    <input class="form-control" type="text" placeholder="Ingrese el apellido" name="apellido" id="apellido">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="edad">Edad</label>
-                    <input class="form-control" type="text" placeholder="Ingrese la edad" name="edad" id="edad">
-                </div>
-                <div class="estados-civiles mb-3">
-                    <p class="form-label">Estado Civil</p>
-
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="soltero">Soltero</label>
-                        <input class="form-check-input" type="radio" name="estado-civil" id="soltero" value="Soltero">
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="casado">Casado</label>
-                        <input class="form-check-input" type="radio" name="estado-civil" id="casado" value="Casado">
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="divorciado">Divorciado</label>
-                        <input class="form-check-input" type="radio" name="estado-civil" id="divorciado" value="Divorciado">
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="viudo">Viudo</label>
-                        <input class="form-check-input" type="radio" name="estado-civil" id="viudo" value="Viudo">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="foto">Foto</label>
-                    <input class="form-control" type="file" name="foto" id="foto">
-                </div>
-
-                <h2>Perfil Profesional</h2>
-                <div class="mb-3">
-                    <label class="form-label" for="descripcion">Descripcion del perfil</label>
-                    <textarea class="form-control" rows="3" id="descripcion" name="descripcion" maxlength="600"></textarea>
-                    <p>(Max 600 caracteres):
-                        <span class="numero-caracteres"></span>
-                    </p>
-                </div>
-
-                <h2>Datos de contacto</h2>
-                <div class="mb-3">
-                    <label class="form-label" for="telefono">Telefono</label>
-                    <input class="form-control" type="text" placeholder="Ingrese el telefono" name="telefono" id="telefono" >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-control" type="text" placeholder="Ingrese el email" name="email" id="email">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="linkedin">Linkedin</label>
-                    <input class="form-control" type="text" placeholder="Ingrese la URL de linkedin" name="linkedin" id="linkedin">
-                </div>
-
-                <h2>Habilidades</h2>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="habilidad" placeholder="Ingresa habilidad" name="habilidad" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-primary" type="button" id="agregar-habilidad">Agregar</button>
-                </div>
-                <div>
-                    <ul class="listado-habilidades">
-                    </ul>
-                </div>
-
-                <h2>Educacion</h2>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="educacion" placeholder="Ingresar institucion educativa" name="educacion" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-primary" type="button" id="agregar-educacion">Agregar</button>
-                </div>
-                <div>
-                    <ul class="listado-educacion">
-                    </ul>
-                </div>
-
-                <h2>Certificaciones</h2>
-                <div class="certificaciones input-group mb-3">
-                    <input type="text" class="certificacion-input form-control" id="certificacion" placeholder="Ingresa certificacion" name="certificacion" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-primary" type="button" id="agregar-certificacion">Agregar</button>
-                </div>
-                <div class="container-certificaciones">
-                    <ul class="listado-certificaciones">
-                    </ul>
-                </div>
-
-        </form>
-
-        <div class="botones container">
-            <div class="boton col-12">
-                <button class="btn btn-primary" id="boton-generar-curriculum">Generar Curriculum</button>
-            </div>
-
-            <div class="boton col-12">
-                <button class="btn btn-primary" id="boton-ver-curriculum">
-                    <a href="curriculum.html">Ver Curriculum</a>
-                </button>
-            </div>
-        </div>
-    </main>
-
-    <footer class="text-muted text-center text-small">
-        <div class="container">
-            <p class="mb-1">&copy; Desarrollado por Nicolás M. Orellano</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script type="module" src="js/form.js"></script>
+      </section>
+      <section>
+        <h2>Perfil profesional</h2>
+        <div class="mb-3"><label class="form-label" for="puesto">Puesto al que te postulas</label><input class="form-control" id="puesto" name="puesto" placeholder="Ej.: Analista de datos"></div>
+        <div class="mb-3"><label class="form-label" for="descripcion">Resumen profesional</label><textarea class="form-control" rows="4" id="descripcion" name="descripcion" maxlength="600" placeholder="Resume tu experiencia, especialidad y logros. Incluye palabras clave relevantes para el puesto."></textarea><p class="ayuda"><span class="numero-caracteres">0</span> / 600 caracteres</p></div>
+      </section>
+      <section>
+        <h2>Experiencia laboral</h2>
+        <p class="ayuda">Incluye cargo, empresa, período y responsabilidades o logros relevantes.</p>
+        <div class="input-group"><label class="visually-hidden" for="experiencia">Experiencia laboral</label><textarea class="form-control" id="experiencia" rows="3" placeholder="Ej.: Analista de datos | Empresa | 2022–2024 — Automaticé reportes y reduje tiempos un 30%"></textarea><button class="btn btn-primary" type="button" id="agregar-experiencia">Agregar</button></div>
+        <ul class="listado-experiencia"></ul>
+      </section>
+      <section>
+        <h2>Educación</h2>
+        <p class="ayuda">Agrega título, institución y año. Ej.: Licenciatura en Administración | Universidad X | 2023.</p>
+        <div class="input-group"><label class="visually-hidden" for="educacion">Educación</label><input class="form-control" id="educacion" placeholder="Título | Institución | Año"><button class="btn btn-primary" type="button" id="agregar-educacion">Agregar</button></div>
+        <ul class="listado-educacion"></ul>
+      </section>
+      <section>
+        <h2>Habilidades</h2>
+        <p class="ayuda">Usa términos concretos que aparezcan en las ofertas laborales de tu área.</p>
+        <div class="input-group"><label class="visually-hidden" for="habilidad">Habilidad</label><input class="form-control" id="habilidad" placeholder="Ej.: Excel avanzado"><button class="btn btn-primary" type="button" id="agregar-habilidad">Agregar</button></div>
+        <ul class="listado-habilidades"></ul>
+      </section>
+      <section>
+        <h2>Certificaciones</h2>
+        <div class="input-group"><label class="visually-hidden" for="certificacion">Certificación</label><input class="form-control" id="certificacion" placeholder="Certificación | Entidad | Año"><button class="btn btn-primary" type="button" id="agregar-certificacion">Agregar</button></div>
+        <ul class="listado-certificaciones"></ul>
+      </section>
+      <div class="botones"><button class="btn btn-primary" id="boton-generar-curriculum" type="button">Generar currículum</button></div>
+    </form>
+  </main>
+  <footer><p>CV Online</p></footer>
+  <script src="js/form.js"></script>
 </body>
 </html>
