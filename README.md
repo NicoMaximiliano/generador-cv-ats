@@ -56,6 +56,10 @@ La información del currículum se guarda en el almacenamiento local (`localStor
 - No incluye carga de archivos, cuentas de usuario, base de datos ni sincronización entre dispositivos.
 - La función de impresión depende de las opciones disponibles en el navegador.
 
+## Link
+
+`https://nicomaximiliano.github.io/generador-cv-ats`
+
 ## Autor
 
 Desarrollado por Nicolás M. Orellano.
